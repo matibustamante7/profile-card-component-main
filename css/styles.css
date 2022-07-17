@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*-----Colors-----*/
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: sl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dar-gray: hsl(0, 0%, 59%);
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+
+.card-container {
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubbles {
+    background: url(../images/bg-pattern-card.svg);
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.photo {
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    height: 96px;
+}
+
+.personal-data-container {
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    padding: 75px;
+    box-sizing: border-box;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.age,
+.city {
+    color: var(--dar-gray);
+}
+
+.city {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.container-data {
+    background-color: white;
+    border-top: 1px solid var(--dar-gray);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    border-radius: 0 0 15px 15px;
+}
+
+.container-data-stadistic {
+    text-align: center;
+    font-size: 16px;
+}
+
+.quantity {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.units {
+    font-size: 0.8em;
+    color: var(--dar-gray);
+    letter-spacing: 2px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+@media (min-width:1200px) {
+    .photo {
+        position: absolute;
+        top: 87px;
+        left: 38%;
+        border-radius: 50%;
+        border: 4px solid white;
+        overflow: hidden;
+        height: 110px;
+        width: 110px;
+    }
+
+    .photo img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .card-container {
+        width: 450px;
+        height: 420px;
+        background-color: white;
+    }
+
+    .personal-data-container {
+        height: 165px;
+        font-size: 22px;
+    }
+    .container-data-stadistic{
+        font-size: 18px;
+    }
+    .container-data {
+        height: 110px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/*-----Medias-----*/
+/*
+    Mobile:
+        AnchoXalto
+    container:275x375px
+    fondo-azul:275x140px
+    fondo-blanco:275x235px
+
+    Datos:275x50px
+*/
+/*-----Responsive-----*/
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
